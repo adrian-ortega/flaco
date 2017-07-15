@@ -17,11 +17,19 @@ abstract class TwigExtensionAbstract
         $this->container = $container;
     }
 
+    /**
+     * Returns an array of functions to register
+     * @return array|\Twig_SimpleFunction[]
+     */
     public function getFunctions()
     {
         return [];
     }
 
+    /**
+     * Returns an array of filters to register
+     * @return array|\Twig_SimpleFilter[]
+     */
     public function getFilters()
     {
         return [];

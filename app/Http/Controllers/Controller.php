@@ -15,7 +15,7 @@ abstract class Controller
     }
 
     /**
-     * Twigg::render() wrapper
+     * Twig::render() wrapper
      * @param  Response|\Slim\Http\Response $response
      * @param  string $template
      * @param  array $data
