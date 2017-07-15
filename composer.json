@@ -1,0 +1,28 @@
+{
+    "name": "adrian-ortega/flaco",
+    "description": "Starter project using Slim Framework",
+    "type": "project",
+    "autoload" : {
+        "psr-4" : {
+            "AOD\\" : "app"
+        }
+    },
+    "require": {
+        "slim/slim": "^3.0",
+        "slim/twig-view": "^2.2",
+        "vlucas/phpdotenv": "^2.4",
+        "symfony/var-dumper": "^3.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrian Ortega",
+            "email": "hello@aortegadesign.com"
+        }
+    ],
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    }
+}
